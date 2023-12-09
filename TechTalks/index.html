@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TECH TALKS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet"> -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+<header>
+    <a href="index.html" class="logo">Tech Talks</a>
+    <ul>
+        <!-- <li><a href="#">Home</a></li> -->
+    </ul>
+</header>
+
+
+   <center> <h1>Ready To Conversation with <br><span>Techy People</span></h1></center>
+   <center> <button id="join-btn" >Join Stream</button></center>
+
+<center><h2>"Tech questions? Ask away and enjoy the platform!"</h2></center>
+
+    <div id="stream-wrapper">
+        <div id="video-streams"></div>
+        
+        <div id="stream-controls">
+            <button id="leave-btn">Leave Stream</button>
+            <button id="mic-btn">Mic On</button>
+            <button id="camera-btn">Camera on</button>
+        </div>
+    </div>
+   
+    <div class="footer">
+        <div class="footer-logo">
+          <p>Tech Talks</p>
+        </div>
+        
+        <div class="footer-company-info">
+          <p>Connecting the Dots,One Random Video Call at a Time!
+          </p>
+        </div>
+        
+        <div class="footer-social-icons">
+          <a href="#" target="_blank"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?w=740&t=st=1700173126~exp=1700173726~hmac=4ce0fdfd50f1263a8bd5a3f843dcd5c7a44574ef846020237797b758925a99ac" alt="Twitter"></a>
+          <a href="#" target="_blank"><img src="https://img.freepik.com/premium-vector/round-instagram-logo-isolated-white-background_469489-898.jpg?w=740" alt="Instagram"></a>
+        </div>
+      </div>
+
+    
+</body>
+<script>
+    window.addEventListener("scroll",function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY > 0)
+    })
+</script>
+
+<script src="AgoraRTC_N-4.7.3.js"></script>
+<script src='javascript.js'></script>
+</html>
